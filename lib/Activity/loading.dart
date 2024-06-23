@@ -11,6 +11,14 @@ class Loading extends StatefulWidget {
 class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
-    return Text("loading page");
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          FlatButton.icon(onPressed: () {
+            Navigat
+          }, icon: Icon(Icons.add_to_home_screen), label : Text("GO TO HOME"))
+        ],
+      )
+        );
   }
 }
